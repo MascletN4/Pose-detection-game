@@ -1,0 +1,14 @@
+html, body {
+  margin-left: 10%;
+}
+canvas {
+  display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+	margin: 15px;
+}

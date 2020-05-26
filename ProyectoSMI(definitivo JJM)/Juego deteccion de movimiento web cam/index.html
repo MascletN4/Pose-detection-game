@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"> 
+    <meta charset="utf-8">
+
+  </head>
+	  <body style="font-family: 'Roboto', sans-serif;">
+	  	<div>
+	  		<h2 style="border-bottom: dashed black; width: 50%"> Instrucciones </h2>
+	   		<h3> Coge las burbujas azules y evita las rojas </h3>
+	    	<h3> Haces un <span style="color: red">FALLO</span> si se te escapa alguna azul o coges alguna roja, a los 3 <span style="color: red">FALLOS</span> termina </h3>
+	    	<p> No le des al boton hasta estar preparado/a y si quieres comenzar otra partida nueva vuelve a apretar el boton de EMPEZAR, pasatelo bien ^^</p>
+	    	<div style="width: 50%; display: inline-flex;">
+	    		<div>
+	    			<button onclick="facil()" style="border-radius: 20px; padding: 10px; background-color: #1adde7;font-weight: bold;">Facil</button>
+	    		</div>
+	    		<div>
+	    			<button onclick="medio()" style="border-radius: 20px; padding: 10px; background-color: #1adde7;font-weight: bold;">Medio</button>
+	    		</div>
+	    		<div>
+	    			<button onclick="dificil()" style="border-radius: 20px; padding: 10px; background-color: #1adde7;font-weight: bold;">Dificil</button>
+	    		</div>
+	    	</div>
+	    	<div>Modo: <span id=modo>MEDIO</span></div>
+	    	<button onclick="comenzar()" style="padding: 15px; border-radius: 12px; background-color: #bec913; font-family: Roboto; font-weight: bold; "> EMPEZAR </button>
+	  		<div>Puntuacion: <span id=punt></span></div>
+	  		<div style="color: red">Fallos: <span id=fallos></span></div>
+
+	  	</div>
+
+	    <div>
+	    <script src="sketch.js"></script>    	
+	    </div>
+	    <h1 id=res style="text-align: center; width: 50%"></h1>
+
+	    
+	  
+	</body>
+</html>
